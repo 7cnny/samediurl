@@ -57,11 +57,11 @@
                     ?>
                         <tr>
                             <td scope="col" > 
-                                <h3> <a class="ph3"> <?php echo ucwords($evolutionPays[$i]['nom_pays']) ?></a> </h3> 
+                                <h3> <a class="ph3"> <?php echo ucwords($evolutionPays['nom_pays'][$i]) ?> </a> </h3> 
                             </th>
-                            <td scope="col"> <?php echo $evolutionPays[$i]['positifs'] ?> </th>
-                            <td scope="col"> <?php echo $evolutionPays[$i]['gueris'] ?> </th>
-                            <td class="td-last" scope="col"> <?php echo $evolutionPays[$i]['deces'] ?> </th>
+                            <td scope="col"> <?php echo $evolutionPays['positifs'][$i] ?> </th>
+                            <td scope="col"> <?php echo $evolutionPays['gueris'][$i] ?> </th>
+                            <td class="td-last" scope="col"> <?php echo $evolutionPays['deces'][$i] ?> </th>
                         </tr>
                     <?php 
                         }
