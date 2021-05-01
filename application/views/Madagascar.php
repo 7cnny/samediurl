@@ -1,5 +1,4 @@
 <?php
-    $province = ["antananarivo","antsiranana","mahajanga","toamasina","fianarantsoa","toliara"];
 ?>
 
 <!DOCTYPE html>
@@ -56,11 +55,11 @@
                     ?>
                         <tr>
                             <td scope="col" > 
-                                <h3> <a class="ph3" href="madagascar-province-<?php echo $evolutionProvinces['nom_province'][$i] ?>.html"> <?php echo ucwords($evolutionProvinces['nom_province'][$i]) ?></a> </h3> 
+                                <h3> <a class="ph3" href="madagascar-province-<?php echo $evolutionProvinces[$i]['nom_province'] ?>.html"> <?php echo ucwords($evolutionProvinces[$i]['nom_province']) ?></a> </h3> 
                             </th>
-                            <td scope="col"> <?php echo $evolutionProvinces['positifs'][$i] ?> </th>
-                            <td scope="col"> <?php echo $evolutionProvinces['gueris'][$i] ?> </th>
-                            <td class="td-last" scope="col"> <?php echo $evolutionProvinces['deces'][$i] ?> </th>
+                            <td scope="col"> <?php echo $evolutionProvinces[$i]['positifs'] ?> </th>
+                            <td scope="col"> <?php echo $evolutionProvinces[$i]['gueris'] ?> </th>
+                            <td class="td-last" scope="col"> <?php echo $evolutionProvinces[$i]['deces'] ?> </th>
                         </tr>
                     <?php 
                         }
